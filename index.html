@@ -4,42 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie List DB</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
   </head>
   <body>
     <header>
-      <form id="form">
-        <h1>Movie List</h1>
-        <input type="text" id="search" class="search" placeholder="Search" />
-      </form>
+      <app-bar></app-bar>
     </header>
     <main id="main"></main>
 
-    <div class="container">
-      <ul class="pagination">
-        <li class="">
-          <a href="#" id="prev">Prev</a>
-        </li>
-        <li class="">
-          <a href="#">1</a>
-        </li>
-        <li class="">
-          <a href="#">2</a>
-        </li>
-        <li class="">
-          <a href="#">3</a>
-        </li>
-        <li class="">
-          <a href="#">4</a>
-        </li>
-        <li class="">
-          <a href="#">5</a>
-        </li>
-        <li class="">
-          <a href="#" id="next">Next</a>
-        </li>
-      </ul>
-    </div>
-    <script src="script.js"></script>
+    <pagination-component></pagination-component>
+    <script src="app.js" type="module"></script>
   </body>
 </html>
