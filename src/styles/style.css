@@ -148,3 +148,22 @@ main {
 .container .pagination li.active a {
   background: rgba(255, 255, 255, 0.2);
 }
+
+/* CSS biasa */
+
+/* Tablet dan perangkat dengan lebar layar lebih besar dari 768px */
+@media screen and (min-width: 768px) {
+  /* Atur tata letak header dan elemen lainnya */
+  header {
+    padding: 2rem;
+  }
+
+  .search {
+    margin: 10px;
+  }
+}
+
+/* Perangkat dengan lebar layar lebih besar dari 1024px */
+@media screen and (min-width: 1024px) {
+  /* Atur tata letak elemen lainnya */
+}
