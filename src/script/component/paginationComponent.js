@@ -1,10 +1,10 @@
 class PaginationComponent extends HTMLElement {
-  connectedCallback() {
-    this.render();
-  }
+    connectedCallback() {
+        this.render();
+    }
 
-  render() {
-    this.innerHTML = `<div class="container">
+    render() {
+        this.innerHTML = `<div class="container">
     <ul class="pagination">
       <li class="">
         <a href="#" id="prev">Prev</a>
@@ -29,7 +29,7 @@ class PaginationComponent extends HTMLElement {
       </li>
     </ul>
   </div>`;
-  }
+    }
 }
 
-customElements.define("pagination-component", PaginationComponent);
+customElements.define('pagination-component', PaginationComponent);
