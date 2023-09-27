@@ -19,4 +19,13 @@ module.exports = merge(common, {
       },
     ],
   },
+  mode: "production",
+  devServer: {
+    client: {
+      overlay: {
+        errors: true,
+        warnings: false,
+      },
+    },
+  },
 });

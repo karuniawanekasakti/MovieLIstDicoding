@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export default class Main {
   constructor() {
     this.API_URL =
@@ -20,8 +22,8 @@ export default class Main {
 
   async getMovies(url) {
     try {
-      const res = await fetch(url);
-      const data = await res.json();
+      const res = await axios.get(url);
+      const data = await res.data;
       this.showMovies(data.results);
     } catch (error) {
       console.error("Error fetching data:", error);
